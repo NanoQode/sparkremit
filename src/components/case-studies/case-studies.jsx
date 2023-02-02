@@ -43,8 +43,7 @@ const CaseStudies = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                         <figure>
                             <img src={caseStudies2} alt='' />
                         </figure>
-                    </div>
-
+                    </div> 
                 </div>
             </div>
 
@@ -55,8 +54,7 @@ const CaseStudies = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                             <h4>325
                                 <span>+</span>
                             </h4>
-                            <p>Clients 
-Worldwide</p>
+                            <p>Clients Worldwide</p>
                         </div>
                     </li>
                     <li>
@@ -64,8 +62,7 @@ Worldwide</p>
                             <h4>970
                                 <span>+</span>
                             </h4>
-                            <p>Projects 
-Completed</p>
+                            <p>Projects Completed</p>
                         </div>
                     </li>
                     <li>
@@ -73,8 +70,7 @@ Completed</p>
                             <h4>70
                                 <span>+</span>
                             </h4>
-                            <p>Team 
-Members</p>
+                            <p>Team Members</p>
                         </div>
                     </li>
                     <li>
@@ -82,14 +78,11 @@ Members</p>
                             <h4>80m
                                 <span>+</span>
                             </h4>
-                            <p>Revenue
-Generated</p>
+                            <p>Revenue Generated</p>
                         </div>
                     </li>
                 </ul>
-            </div>
-
- 
+            </div> 
         </Container>
     </section>
   )

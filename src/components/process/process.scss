@@ -1,15 +1,19 @@
+@import "../../variable.scss";
 .process-wrap{
     .process-inner{
-        padding: 137px 0;
+        padding: 137px 20px;
         background: linear-gradient(111.05deg, #E9F7FF 9.66%, #FFDBD5 57.52%, #FFF3CA 103.42%);
         border-radius: 10px; 
+        @include media-query(md){
+            padding: 100px 20px;
+        }
         .d-flex.mt-heading-wrap{
             flex-direction: column; 
             justify-content: center;
             align-items: center;
             margin-bottom: 63px;
             *{
-                color: #292930 !important;
+                color: $mt-black !important;
             }
             .icon{
                 margin-bottom: 34px;
@@ -34,9 +38,15 @@
                 height: calc(100% - 200px);
                 border-right: 1px dashed     #E38676;
                 left: calc(50% - 1px);
+                @include media-query(sm){
+                    display: none;
+                }
             }
             &>div:nth-of-type(even){
                 flex-direction: row-reverse;
+                @include media-query(sm){
+                    flex-direction: column;
+                }
                 img{
                     margin-left: auto;
                     display: block;
@@ -50,6 +60,10 @@
                 align-items: center;
                 gap: 130px;
                 position: relative;
+                @include media-query(sm){
+                    flex-direction: column;
+                    gap: 20px;
+                }
                 &::after{ 
                     position: absolute;
                     left: 50%;
@@ -69,16 +83,22 @@
                     font-size: 30px;
                     line-height: 110.5%; 
                     text-align: center; 
-                    color: #292930;
+                    color: $mt-black;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @include media-query(sm){
+                        display: none;
+                    }
                 }
                 &+div{
                     margin-top: 50px;
                 }
                 figure{
                     width: 50%;
+                    @include media-query(xs){ 
+                        width: 100%;
+                    }
                     img{
                         width: 292px;
                         max-width: 100%;
@@ -86,23 +106,31 @@
                 }
                 .process-text{
                     width: 50%;
+                    @include media-query(xs){ 
+                        width: 100%;
+                    }
                     h3{
                         font-family: 'Nunito', sans-serif;
                         font-style: normal;
                         font-weight: 600;
                         font-size: 25px;
                         line-height: 110.5%;  
-                        color: #292930;
+                        color: $mt-black;
                         margin-bottom: 13px;
+                        @include media-query(md){
+                            font-size: 20px;
+                        }
+                        @include media-query(sm){ 
+                            text-align: center;
+                        }
                     }
                     p{
-                        font-family: 'Nunito', sans-serif;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 156.5%;  
+                        @include text-font;  
                         color: #555555;
-                        margin-bottom: 0;
+                        margin-bottom: 0; 
+                        @include media-query(sm){ 
+                            text-align: center;
+                        } 
                     }
                 }
             }

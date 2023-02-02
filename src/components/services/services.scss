@@ -1,24 +1,68 @@
+@import "../../variable.scss";
 section.services-wrap {
     background-color: #525255;
     padding: 173px 0;
+    @include media-query(xl){
+        padding: 120px 0;
+    }
+    @include media-query(md){
+        padding: 100px 0;
+    }
     .services-outer {
         display: flex;
         flex-wrap: wrap;
         gap: 72px 67px;
         margin-top: 90px;
+        @include media-query(xl){
+            gap: 50px;
+            margin-top: 70px;
+        }
+        @include media-query(lg){
+            gap: 40px;
+            margin-top: 60px;
+        }
+        @include media-query(md){
+            gap: 30px;
+            margin-top: 40px;
+        }
         .seervices-inner{
             width: calc(33.33% - 45px);
-            background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+            background: linear-gradient(180deg, #36363E 0%, $mt-black 100%);
             border: 1px solid #424245;
             border-radius: 30px;
             padding: 41px 39px;
+            @include media-query(xl){
+                width: calc(33.33% - 34px);
+            }
+            @include media-query(lg){
+                width: calc(33.33% - 26.7px);
+                padding: 30px;
+            }
+            @include media-query(md){
+                width: calc(50% - 15px);
+            }
+            @include media-query(sm){
+                padding: 20px;
+            }
+            @include media-query(xs){
+                width: 100%;
+            }
             figure{
                 width: 153px;
                 height: 153px;
-                background-color: #292930;
+                background-color: $mt-black;
                 border-radius: 50%;
                 margin-bottom: 26px;
                 padding: 34px;
+                @include media-query(lg){
+                    width: 140px;
+                    height: 140px;
+                }
+                @include media-query(sm){
+                    width: 100px;
+                    height: 100px;
+                    padding: 25px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -30,20 +74,23 @@ section.services-wrap {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 25px;
-                line-height: 110.5%;
-                color: #FFFFFF;
-                
-                color: #FFFFFF;
+                line-height: 110.5%; 
+                color: $mt-white ;
                 margin-bottom: 14px;
+                @include media-query(xl){
+                    font-size: 22px;
+                }
+                @include media-query(lg){
+                    font-size: 20px;
+                }
             }
             p{
-                font-family: 'Nunito', sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 156.5%; 
+                @include text-font;
                 color: #D0D0D0;
                 margin-bottom: 26px;
+                @include media-query(xl){
+                    font-size: 16px;
+                }
             }
             button{  
                 border: 1px solid #535355;
@@ -63,6 +110,9 @@ section.services-wrap {
                 align-items: center;
                 justify-content: center;
                 transition: 0.3s ease-in-out;
+                @include media-query(xl){
+                    padding: 17px;
+                }                
                 img{
                     margin-left: 8px;
                     width: 14px;
@@ -70,7 +120,7 @@ section.services-wrap {
                     filter: grayscale(1) ;
                 }
                 &:hover{
-                    background-color: #FFDC60;
+                    background-color:$mt-yellow;
                     img{
                         filter: grayscale(0) ;
                     }

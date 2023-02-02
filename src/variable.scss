@@ -1,0 +1,75 @@
+// Colors
+$mt-dark   : #000000;
+$mt-black  : #292930;
+$mt-yellow : #FFDC60;
+$mt-blue   : #5956E8;
+$mt-white  : #FFFFFF;
+// Media Query
+@mixin media-query($size) {
+    @if $size == xxl {
+      @media (max-width: 1700px) {
+        @content;
+      }
+    }@else if $size == xl1 {
+        @media (max-width: 1480px) {
+          @content;
+        }
+      } @else if $size == xl {
+      @media (max-width: 1399px) {
+        @content;
+      }
+    } @else if $size == lg {
+      @media (max-width: 1199px) {
+        @content;
+      }
+    } @else if $size == md {
+      @media (max-width: 991px) {
+        @content;
+      }
+      
+    } @else if $size == sm {
+      @media (max-width: 767px) {
+        @content;
+      }
+    }  @else if $size == xs {
+      @media (max-width: 575px) {
+        @content;
+      }
+    }
+    @else if $size == wid480 {
+      @media (max-width: 480px) {
+        @content;
+      }
+    }@else if $size == wid40 {
+      @media (max-width: 400px) {
+        @content;
+      }
+    }
+}
+// Text Font
+@mixin text-font { 
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.5%;
+    @include media-query(lg){
+        font-size: 16px;
+    }
+    @include media-query(xs){
+        font-size: 15px;
+    } 
+}
+@mixin text-fontM { 
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156.5%;
+    @include media-query(lg){
+        font-size: 16px;
+    }
+    @include media-query(xs){
+        font-size: 15px;
+    } 
+}

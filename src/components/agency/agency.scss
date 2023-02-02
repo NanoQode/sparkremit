@@ -1,3 +1,4 @@
+@import "../../variable.scss";
 .agency{
     background-image: url(../../images/Banner.png);
     background-size: cover;
@@ -6,6 +7,12 @@
     overflow: hidden;
     .agency-title{
         margin-top: 162px;
+        @include media-query(lg){
+            margin-top: 102px;
+        }
+        @include media-query(xs){
+            margin-top: 20px;
+        }
         >span{
             font-family: 'Nunito', sans-serif;
             font-style: normal;
@@ -14,7 +21,7 @@
             line-height: 156.5%; 
             letter-spacing: 0.135em;
             text-transform: uppercase; 
-            color: #292930;
+            color: $mt-black;
             margin-bottom: 28px;
         }
         h1{
@@ -23,53 +30,62 @@
             font-weight: 800;
             font-size: 70px;
             line-height: 110.5%; 
-            color: #292930;
+            color: $mt-black;
             margin-bottom: 34px;
+            @include media-query(lg){
+                font-size: 56px;
+            }
+            @include media-query(xs){
+                font-size: 40px;
+            }
             span{
-                color: #5956E8;
+                color: $mt-blue;
             }
         }
         p{
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 156.5%; 
+            @include text-font;
             color: #555555;
             margin-bottom: 34px;
-            max-width: 593px;
+            max-width: 593px; 
         }
     }
     .agency-btn{
         gap: 20px;
         display: flex;
         margin-bottom: 42px;
+        flex-wrap: wrap;
         a {
             padding: 17px 39px 18px;
             min-width: 182px;
             height: 64px;
-            background: #292930;
-            border: 1px solid #292930;
+            background: $mt-black;
+            border: 1px solid $mt-black;
             border-radius: 7px;
-            color: #FFFFFF;
+            color: $mt-white ;
             font-family: 'Nunito', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 160%;
             transition: 0.3s ease-in-out;
+            @include media-query(sm){ 
+               padding: 12px 32px;
+               font-size: 16px;
+               height: auto;
+               min-width: unset;
+            }
             &:hover{
-                background-color: #5956E8;
+                background-color: $mt-blue;
                 color: #fff;
-                border-color: #5956E8;
+                border-color: $mt-blue;
             }
             &+a{
                 background-color: transparent;
-                color: #292930;
+                color: $mt-black;
                 &:hover{
-                    background-color: #292930;
+                    background-color: $mt-black;
                     color: #fff;
-                    border-color: #292930;
+                    border-color: $mt-black;
                 }
             }
         }
@@ -89,6 +105,11 @@
                     width: 53px;
                     height: 53px;
                     margin-bottom: 40px;
+                    @include media-query(lg){
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 20px;
+                    }
                     img{
                         width: 100%;
                         height: 100%;
@@ -96,15 +117,11 @@
                     }
                 }
                 p{
-                    font-family: 'Nunito', sans-serif;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 160%; 
+                    @include text-font;
                     text-transform: capitalize; 
-                    color: #000000;
+                    color: $mt-dark;
                     max-width: 134px;
-                    margin-bottom: 0;
+                    margin-bottom: 0; 
                 }
             }
         }
@@ -112,6 +129,9 @@
     .right-sec{
         position: relative;
         z-index: 1;
+        @include media-query(md){
+            margin-top: 60px;
+        }
         .bg-effect{
             position: absolute;
             width: 1208px;
@@ -121,15 +141,42 @@
             background: #F4F6FB;
             z-index: -1;
             border-radius: 50%;
+            pointer-events: none;
+            @include media-query(xl){
+                left: -50px;
+                top: -208px;
+            }
+            @include media-query(md){
+                top: -48px;
+            }
         }
     }
     .banner-form {
-        background: #FFFFFF;
+        background: $mt-white ;
         border-radius: 23px;
         padding: 92px 78px 117px;
         margin-right: -190px;
         position: relative;
         z-index: 9;
+        @include media-query(xxl){
+            margin-right: -115px;
+            padding: 77px 63px 107px;
+        }
+        @include media-query(xl1){
+            margin-right: -73px;
+            padding: 63px 45px 97px
+        }
+        @include media-query(xl){
+            margin-right: 0;
+            padding: 60px 35px 97px;
+        }
+        @include media-query(md){
+            max-width: 490px;
+            margin: 0 auto;
+        }
+        @include media-query(xs){
+            padding: 20px;
+        }
         .input-group {
             border: 1px solid rgba(0, 0, 0, 0.58);
             border-radius: 8px;
@@ -138,6 +185,9 @@
             margin-bottom: 59px;
             flex-wrap: nowrap;
             padding: 10px; 
+            @include media-query(lg){
+                margin-bottom: 40px;
+            }
             label{
                 font-family: 'Nunito';
                 font-style: normal;
@@ -156,6 +206,9 @@
                 outline: none;
                 box-shadow: none;
                 width: 280px;
+                @include media-query(xs){
+                    width: 50%;
+                }
             }
             select{
                 border: none;
@@ -164,7 +217,7 @@
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 160%; 
-                color: #000000;
+                color: $mt-dark;
                 outline: none;
                 box-shadow: none;
                 width: 150px;
@@ -173,6 +226,9 @@
                 background-position: left center;
                 background-size: 30px;
                 background-repeat: no-repeat;
+                @include media-query(xs){
+                    width: 50%;
+                }
             }
         }
         .mt-fees {
@@ -188,9 +244,15 @@
                     text-align: right;
                     text-transform: capitalize; 
                     color: rgba(0, 0, 0, 0.69);
+                    @include media-query(lg){
+                        font-size: 17px;
+                    }
+                    @include media-query(xs){ 
+                        font-size: 14px;
+                    }
                     span{
                         &:first-child{
-                            color: #000000;
+                            color: $mt-dark;
                         }
                     } 
         }
@@ -198,10 +260,10 @@
             padding: 17px 39px 18px;
             min-width: 182px;
             height: 64px;
-            background: #292930;
-            border: 1px solid #292930;
+            background: $mt-black;
+            border: 1px solid $mt-black;
             border-radius: 7px;
-            color: #FFFFFF;
+            color: $mt-white ;
             font-family: 'Nunito', sans-serif;
             font-style: normal;
             font-weight: 500;
@@ -211,10 +273,17 @@
             width: 180px;
             margin: 70px auto 0;
             transition: 0.3s ease-in-out;
+            @include media-query(sm){ 
+               padding: 12px 32px;
+               font-size: 16px;
+               height: auto;
+               min-width: unset;
+               text-align: center;
+            }
             &:hover{
-                background-color: #5956E8;
+                background-color: $mt-blue;
                 color: #fff;
-                border-color: #5956E8;
+                border-color: $mt-blue;
             }
         }
     }  
@@ -222,16 +291,26 @@
         position: absolute;
         left: -138px;
         top: 59px;
+        @include media-query(xs){
+            display: none;
+        }
     }
     .banner-img-3{
         position: absolute;
         left: -53px;
         bottom: 133px;
+        
+        @include media-query(xs){
+            display: none;
+        }
     }
     .banner-img-2{
         position: absolute;
         right: -65px;
         bottom: 59px;
+        @include media-query(xs){
+            display: none;
+        }
     }
 }
 }

@@ -1,3 +1,4 @@
+@import "../../variable.scss";
 section.countries-wrap{
     padding: 80px 0;
     .countries-title{
@@ -9,15 +10,15 @@ section.countries-wrap{
             font-weight: 600;
             font-size: 40px;
             line-height: 110.5%; 
-            color: #292930;
+            color: $mt-black;
             margin-bottom: 23px;
+            @include media-query(lg){
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
         }   
         p{
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 156.5%; 
+            @include text-font; 
             color: #282828;
             margin-bottom: 23px;
         }
@@ -29,12 +30,22 @@ section.countries-wrap{
             align-items: flex-start;
             margin: 0;
             padding: 0;
-            list-style: none;
+            list-style: none; 
+            @include media-query(sm){
+                gap: 30px;
+            }
             li{
                 width: 33.33%;
                 display: flex;
                 align-items: center;
                 margin-bottom: 30px;
+                @include media-query(sm){
+                    width: calc(50% - 15px);
+                    margin-bottom: 0;
+                }
+                @include media-query(xs){
+                    width: 100%;
+                }
                 figure{
                     margin: 0;
                     img{
@@ -46,11 +57,7 @@ section.countries-wrap{
                     }
                 }
                 p{
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 156.5%;
+                    @include text-font;
                     color: #282828;
                     margin: 0;
                     padding-left: 20px;

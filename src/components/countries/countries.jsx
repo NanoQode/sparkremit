@@ -11,8 +11,7 @@ const Countries = () => {
             <div className='countries-title'>
                 <h3>Supported Countries</h3>
                 <p>We deliver money to 170 countries worldwide</p>
-            </div>
-
+            </div> 
             <div className='countries-list'>
                 <ul>{
                     countriesList?.map((item) =>

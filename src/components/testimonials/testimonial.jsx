@@ -8,7 +8,7 @@ import Title from '../title/title';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { testimonial2 ,testimonial3,testimonial4,testimonial5,testimonial6} from "../../images";
+import { testimonial2 ,testimonial4,testimonial5} from "../../images";
 
 
 const options = {
@@ -25,10 +25,10 @@ const options = {
   responsive: {
     0: {
       items: 1,
-      nav: false,
+      nav: true,
       touchDrag: true,
     },
-    575: {
+    768: {
       items: 2,
       nav: true,
       touchDrag: true,
@@ -48,10 +48,10 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   <div className="review-outer">
                       <div className='image-raring'>
                           <figure>
-                            <img src={testimonial2} />
+                            <img src={testimonial2} alt="img"/>
                           </figure>
                           <div className='rating'>
-                            <img src={testimonial4}/>
+                            <img src={testimonial4} alt="img"/>
                           </div>
                       </div>
                       <div className='review-text'>
@@ -60,7 +60,7 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   </div>
                   <div className='user-name'>
                     <figure>
-                      <img src={testimonial5} />
+                      <img src={testimonial5} alt="img"/>
                     </figure>
                     <h4>John Carter
                       <span>Marketing Lead at Google</span>
@@ -71,10 +71,10 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   <div className="review-outer">
                       <div className='image-raring'>
                           <figure>
-                            <img src={testimonial2} />
+                            <img src={testimonial2} alt="img"/>
                           </figure>
                           <div className='rating'>
-                            <img src={testimonial4}/>
+                            <img src={testimonial4} alt="img"/>
                           </div>
                       </div>
                       <div className='review-text'>
@@ -83,7 +83,7 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   </div>
                   <div className='user-name'>
                     <figure>
-                      <img src={testimonial5} />
+                      <img src={testimonial5} alt="img"/>
                     </figure>
                     <h4>Peeter pawl
                       <span>Designer</span>
@@ -94,10 +94,10 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   <div className="review-outer">
                       <div className='image-raring'>
                           <figure>
-                            <img src={testimonial2} />
+                            <img src={testimonial2} alt="img"/>
                           </figure>
                           <div className='rating'>
-                            <img src={testimonial4}/>
+                            <img src={testimonial4} alt="img"/>
                           </div>
                       </div>
                       <div className='review-text'>
@@ -106,7 +106,7 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   </div>
                   <div className='user-name'>
                     <figure>
-                      <img src={testimonial5} />
+                      <img src={testimonial5} alt="img"/>
                     </figure>
                     <h4>John Carter
                       <span>Marketing Lead at Google</span>
@@ -117,10 +117,10 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   <div className="review-outer">
                       <div className='image-raring'>
                           <figure>
-                            <img src={testimonial2} />
+                            <img src={testimonial2} alt="img"/>
                           </figure>
                           <div className='rating'>
-                            <img src={testimonial4}/>
+                            <img src={testimonial4} alt="img"/>
                           </div>
                       </div>
                       <div className='review-text'>
@@ -129,7 +129,7 @@ const Testimonials = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                   </div>
                   <div className='user-name'>
                     <figure>
-                      <img src={testimonial5} />
+                      <img src={testimonial5} alt="img"/>
                     </figure>
                     <h4>Peeter pawl
                       <span>Designer</span>

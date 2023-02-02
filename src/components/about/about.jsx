@@ -1,11 +1,8 @@
 
 
 
-import React from 'react' 
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container'; 
- 
-import Accordion from 'react-bootstrap/Accordion';
+import React from 'react'  
+import Container from 'react-bootstrap/Container';  
 
 import {about1,about2,about3,about4,about5} from '../../images';
 import Title from '../title/title';
@@ -26,8 +23,7 @@ const About = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
             <div className='about-text'>
                     <Title iconBg={iconBg} iconImage={about1} subTitle={subTitle} title={title} buttonText={buttonText}></Title>
                     <div className='about-description'>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
-ftyuu Ipsum has been the industry's standard book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ftyuu Ipsum has been the industry's standard book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                     </div>
                     <ul className='about-inner'>
                         <li>

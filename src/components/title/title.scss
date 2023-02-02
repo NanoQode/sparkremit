@@ -1,8 +1,13 @@
+@import "../../variable.scss";
 .mt-heading{
     .mt-heading-wrap {
         justify-content: space-between;
         gap: 20px;
         align-items: flex-end;
+        @include media-query(sm){
+            flex-direction: column;
+            align-items: flex-start;
+        }
         .icon-title {
             display: flex;
             .icon{
@@ -11,6 +16,18 @@
                 border-radius: 50%;
                 margin-right: 39px;
                 padding: 26px;
+                @include media-query(xl){
+                    width: 80px;
+                    height: 80px;
+                    padding: 22px;
+                    margin-right: 25px;
+                }
+                @include media-query(md){
+                    width: 60px;
+                    height: 60px;
+                    min-width: 60px;
+                    padding: 15px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -29,6 +46,16 @@
                     text-transform: uppercase; 
                     color: #D0D0D0;
                     margin-bottom: 14px;
+                    @include media-query(xl){
+                        margin-bottom: 10px;
+                    }
+                    @include media-query(lg){
+                        line-height:1.5; 
+                    }    
+                    @include media-query(md){
+                        font-size: 14px;
+                        margin-bottom: 7px;
+                    }                
                     span{
                         color: #FEC90C;
                         margin-right: 5px;
@@ -40,15 +67,27 @@
                     font-weight: 600;
                     font-size: 40px;
                     line-height: 110.5%; 
-                    color: #FFFFFF;
+                    color: $mt-white ;
                     margin-bottom: 0;
+                    @include media-query(xl){
+                        font-size: 35px;
+                    }
+                    @include media-query(lg){
+                        font-size: 28px;
+                    }
+                    @include media-query(md){
+                        font-size: 24px;
+                    }
                 }
             }
         }
         .right-btn{
+            @include media-query(sm){
+                padding-left: 86px;
+            }
             button{
                 padding: 17px 24px 18px;  
-                background: #FFFFFF;
+                background: $mt-white ;
                 border-radius: 7px;
                 font-family: 'Nunito', sans-serif;
                 font-style: normal;
@@ -56,9 +95,17 @@
                 font-size: 18px;
                 line-height: 160%; 
                 text-transform: capitalize; 
-                color: #292930;
+                color: $mt-black;
                 border: none;
                 transition: 0.3s ease-in-out;
+                white-space: nowrap;
+                @include media-query(sm){ 
+                   padding: 12px 20px;
+                   font-size: 16px;
+                   height: auto;
+                   min-width: unset;
+                   text-align: center;
+                }
                 img{
                     width: 14px;
                     height: 14px;

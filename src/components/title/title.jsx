@@ -9,7 +9,7 @@ const Title = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
         <div className='d-flex  mt-heading-wrap'>
             <div className='icon-title'>
                 <div className='icon' style={{backgroundColor: iconBg}}>
-                    <img src={iconImage} alt="Image"/>
+                    <img src={iconImage} alt="img"/>
                 </div>
                 <div className='sub-title'>
                     <h3><span>//</span>{subTitle}</h3>
@@ -18,7 +18,7 @@ const Title = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
             </div>
             {buttonText &&
             <div className='right-btn'>
-                <Button variant="primary">{buttonText} <img src={nextIcon}></img></Button>
+                <Button variant="primary">{buttonText} <img src={nextIcon}  alt="img"></img></Button>
             </div>
             } 
         </div>

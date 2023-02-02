@@ -6,7 +6,7 @@ const Agency = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
      <section className='agency'>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-8'>
+                <div className='col-xxl-8 col-lg-7 col-12'>
                     <div className='agency-title'>
                         <span>Agency</span>
                         <h1>Send money to <span>marketing</span> agency</h1>
@@ -22,37 +22,34 @@ const Agency = ({ iconBg,iconImage, subTitle,title,buttonText }) => {
                                 <figure>
                                     <img src={agency1} alt=''/>
                                 </figure>
-                                <p>fast and hassle
-free</p>
+                                <p>fast and hassle free</p>
                             </li>
                             <li>
                                 <figure>
                                     <img src={agency2} alt=''/>
                                 </figure>
-                                <p>Trusted by over 
-6M customers</p>
+                                <p>Trusted by over 6M customers</p>
                             </li>
                             <li>
                                 <figure>
                                     <img src={agency3} alt=''/>
                                 </figure>
-                                <p>global 24/7
-support</p>
+                                <p>global 24/7 support</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div className='col-md-4 right-sec'>
+                <div className='col-xxl-4 col-lg-5 col-12 right-sec'>
                         <div className='bg-effect'></div>
                     <div className='banner-form'>
-                        <span class="banner-img-1">
-                            <img src={agency4}></img>
+                        <span className="banner-img-1">
+                            <img src={agency4} alt=''></img>
                         </span>
-                        <span class="banner-img-2">
-                            <img src={agency6}></img>
+                        <span className="banner-img-2">
+                            <img src={agency6} alt=""></img>
                         </span>
-                        <span class="banner-img-3">
-                            <img src={agency5}></img>
+                        <span className="banner-img-3">
+                            <img src={agency5} alt=""></img>
                         </span>
                         <div className='input-group'>
                             <label>You Send</label>

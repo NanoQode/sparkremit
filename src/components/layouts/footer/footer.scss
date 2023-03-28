@@ -1,34 +1,43 @@
 @import "../../../variable.scss";
-footer{
+
+footer {
     padding: 190px 0 100px 0;
     background-color: $mt-black;
-    @include media-query(xl){
+
+    @include media-query(xl) {
         padding: 130px 0 90px 0;
     }
-    @include media-query(md){
+
+    @include media-query(md) {
         padding: 100px 0 50px 0;
     }
-    .container{
+
+    .container {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 100px;
-        @include media-query(xl){
+
+        @include media-query(xl) {
             gap: 50px;
         }
+
         .left-subscribe {
             background: #3C3C45;
             border-radius: 7px;
             width: 34%;
             padding: 49px 53px;
-            @include media-query(lg){
+
+            @include media-query(lg) {
                 padding: 30px;
             }
-            @include media-query(md){
+
+            @include media-query(md) {
                 width: 100%;
             }
-            .footer-logo{
-                img{
+
+            .footer-logo {
+                img {
                     height: 81px;
                     width: auto;
                     max-width: 100%;
@@ -36,34 +45,40 @@ footer{
                     display: block;
                 }
             }
-            figure{
+
+            figure {
                 height: 228px;
                 width: 100%;
-                @include media-query(lg){
+
+                @include media-query(lg) {
                     height: 200px;
                 }
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: scale-down;
                     object-position: center;
                 }
             }
-            h4{
+
+            h4 {
                 font-family: 'Nunito';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 25px;
-                line-height: 110.5%; 
+                line-height: 110.5%;
                 color: $mt-white ;
                 margin: 0;
             }
-            p{
+
+            p {
                 @include text-font;
                 color: #D0D0D0;
-                margin-bottom: 18px; 
+                margin-bottom: 18px;
             }
-            input{
+
+            input {
                 background: #5B5B61;
                 border-radius: 7px;
                 padding: 16px 26px;
@@ -71,16 +86,18 @@ footer{
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
-                line-height: 160%; 
-                text-transform: capitalize; 
+                line-height: 160%;
+                text-transform: capitalize;
                 color: $mt-white ;
                 border: none;
                 width: 100%;
-                &::placeholder{
+
+                &::placeholder {
                     color: #fff;
                 }
             }
-            a{
+
+            a {
                 margin-top: 18px;
                 background: $mt-yellow;
                 border-radius: 7px;
@@ -90,42 +107,50 @@ footer{
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
-                line-height: 160%; 
-                text-transform: capitalize; 
+                line-height: 160%;
+                text-transform: capitalize;
                 color: $mt-black;
                 display: inline-block;
                 text-align: center;
                 transition: 0.3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     background: $mt-blue;
                     color: #fff;
                 }
             }
         }
-        .footer-right{
+
+        .footer-right {
             width: calc(66% - 100px);
-            @include media-query(xl){
+
+            @include media-query(xl) {
                 width: calc(66% - 50px);
             }
-            @include media-query(md){
+
+            @include media-query(md) {
                 width: 100%;
             }
-            h3{
+
+            h3 {
                 font-family: 'Nunito';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 25px;
-                line-height: 110.5%; 
+                line-height: 110.5%;
                 color: $mt-white ;
-                @include media-query(lg){
+
+                @include media-query(lg) {
                     font-size: 22px;
                 }
-                img{
+
+                img {
                     width: 22px;
                     height: 22px;
                     margin-right: 5px;
                 }
             }
+
             .footer-top {
                 display: flex;
                 align-items: center;
@@ -134,97 +159,120 @@ footer{
                 padding-bottom: 50px;
                 border-bottom: 1px solid #727274;
                 margin-bottom: 50px;
-                @include media-query(lg){
+
+                @include media-query(lg) {
                     gap: 50px;
                 }
+
                 .get-in-touch {
-                    width: 41%; 
-                    @include media-query(xs){
+                    width: 41%;
+
+                    @include media-query(xs) {
                         width: 100%;
                     }
-                    h3{
+
+                    h3 {
                         margin-bottom: 17px;
                     }
-                    a{
+
+                    a {
                         background: #3C3C45;
                         border-radius: 7px;
                         font-family: 'Nunito';
                         font-style: normal;
                         font-weight: 700;
                         font-size: 25px;
-                        line-height: 156.5%; 
+                        line-height: 156.5%;
                         color: $mt-yellow;
                         width: 100%;
                         text-align: center;
                         display: inline-block;
                         padding: 12px;
-                        @include media-query(lg){
+
+                        @include media-query(lg) {
                             font-size: 20px;
                         }
                     }
-                    p{
+
+                    p {
                         @include text-font;
                         color: $mt-white ;
-                        margin: 17px 0 0 0; 
+                        margin: 17px 0 0 0;
                     }
                 }
-                .mt-locations{
+
+                .mt-locations {
                     width: calc(59% - 100px);
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
-                    @include media-query(lg){
+
+                    @include media-query(lg) {
                         width: calc(59% - 50px);
                         gap: 18px;
                     }
-                    @include media-query(xs){
+
+                    @include media-query(xs) {
                         width: 100%;
                     }
-                    h3{
+
+                    h3 {
                         margin: 0;
                     }
-                    img{
+
+                    img {
                         width: 25px;
                         height: 25px;
                         object-fit: scale-down;
                     }
-                    p,a{
+
+                    p,
+                    a {
                         @include text-font;
                         color: $mt-white ;
-                        margin: 0; 
+                        margin: 0;
                     }
                 }
             }
         }
-        .footer-links{
+
+        .footer-links {
             display: flex;
             justify-content: space-between;
             gap: 100px;
             padding-bottom: 50px;
             border-bottom: 1px solid #727274;
             margin-bottom: 17px;
-            @include media-query(lg){
+
+            @include media-query(lg) {
                 gap: 40px;
             }
-            @include media-query(xs){
+
+            @include media-query(xs) {
                 flex-direction: column;
             }
-            h3{
+
+            h3 {
                 margin-bottom: 30px;
-                @include media-query(lg){
+
+                @include media-query(lg) {
                     margin-bottom: 20px;
                 }
             }
-            ul{
+
+            ul {
                 padding: 0;
                 margin: 0;
                 list-style: none;
-                li{
-                    a{
+
+                li {
+                    a {
                         @include text-font;
-                        line-height: 211.5%; 
-                        color: $mt-white ; 
-                        &:hover{
+                        line-height: 211.5%;
+                        color: $mt-white ;
+                        text-decoration: none;
+
+                        &:hover {
                             color: #fff;
                             opacity: 0.8;
                         }
@@ -232,14 +280,16 @@ footer{
                 }
             }
         }
-        .copyright{
-            p{
+
+        .copyright {
+            p {
                 @include text-font;
-                text-decoration-line: underline; 
+                text-decoration-line: underline;
                 color: $mt-white ;
                 padding: 0 40px;
-                margin: 0;  
-                @include media-query(sm){
+                margin: 0;
+
+                @include media-query(sm) {
                     text-align: center;
                 }
             }

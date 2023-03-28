@@ -8,7 +8,8 @@ import About2 from "./about2/about";
 import Process from "./process/process"
 import Testimonials from "./testimonials/testimonial";
 import CaseStudies from "./case-studies/case-studies";
-import Countries from "./countries/countries"
+import Countries from "./countries/countries";
+import Banner from "./banner/banner";
 
 
  
@@ -24,6 +25,6 @@ export {
     Process,
     Testimonials,
     CaseStudies,
-    Countries
-    
+    Countries,
+    Banner    
 };

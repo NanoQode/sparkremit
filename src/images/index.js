@@ -72,6 +72,9 @@ import footer6 from './footer-6.png';
 import footer7 from './footer-7.png';
 import footer8 from './footer-8.png'; 
 
+//Enterprice
+import  Enterprice  from "./enterprice.jpg";
+
 
 
 export {
@@ -135,5 +138,10 @@ export {
     footer5,
     footer6,
     footer7,
-    footer8
+    footer8,
+
+    //Enterprice
+    Enterprice
+
+
 };

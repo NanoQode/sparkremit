@@ -1,0 +1,24 @@
+.post-container {
+    display: block;
+    border-radius: 30px;
+    padding: 2vw;
+    text-decoration: none;
+    color: #292930;
+    margin-bottom: var(--bs-gutter-x);
+    border: 1px solid #dcdcdc;
+
+    .post-image {
+        margin-bottom: 2vw;
+    }
+
+    .post-text p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: #292930;
+        background: linear-gradient(124.11deg, #E9F7FF 5.58%, #FFDBD5 21.8%, #FFF3CA 37.36%);
+        border-color: transparent;
+    }
+}

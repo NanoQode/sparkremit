@@ -1,0 +1,45 @@
+.personal-info {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 20px;
+
+    .p-i-hdr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+        margin-bottom: 15px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    .p-i-bdy {
+        color: rgba(0, 0, 0, 0.37);
+
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .p-i-label {
+            width: 40%;
+            font-weight: 500;
+        }
+
+        .p-i-text h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+
+            a {
+                margin-left: 5px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

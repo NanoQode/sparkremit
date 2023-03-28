@@ -1,0 +1,43 @@
+@import "../../variable.scss";
+.mt-banner{ 
+    background-size: cover;
+    background-position: center;
+    padding:230px 0 130px 0;
+    overflow: hidden;
+    .row{
+        align-items: center;
+    }
+    .mt-banner-title{
+        span{
+            @include fontStyle(500,15px,22px,#292930); 
+            letter-spacing: 0.135em;
+            text-transform: uppercase; 
+            margin-bottom: 28px;
+        }
+        h1{
+            font-family: 'Nunito', sans-serif; 
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 110.5%;
+            color: #292930;
+            margin-bottom: 34px;
+
+        }
+        p{
+            font-family: 'Nunito', sans-serif; 
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156.5%;
+            color: #555555;
+            margin-bottom: 34px;
+            max-width: 593px;
+        }
+    }
+    .right-sec{
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

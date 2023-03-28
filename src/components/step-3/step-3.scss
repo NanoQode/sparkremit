@@ -1,0 +1,33 @@
+.add-bank {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    margin-top: 20px;
+
+    .add-bank-hdr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+        svg {
+            fill: #5956E8;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    .add-bank-bdy {
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

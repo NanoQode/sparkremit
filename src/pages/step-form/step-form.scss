@@ -1,0 +1,128 @@
+.step-form-container {
+    padding: 80px;
+    box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.17);
+    border-radius: 23px;
+    margin-top: 200px;
+
+    .s-f-left {
+        border-right: 1px solid rgba(0, 0, 0, 0.26);
+        padding-right: 30px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        img {
+            margin-bottom: 80px;
+        }
+
+        p {
+            color: #555555;
+        }
+
+        .link {
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            svg {
+                margin-right: 10px;
+                fill: #292930;
+            }
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-family: "Nunito", sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    .s-f-right {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        >* {
+            width: 100%;
+        }
+    }
+
+    form {
+        text-align: right;
+
+        .f-group {
+            text-align: left;
+        }
+
+        .form-select,
+        .form-control {
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+            padding: 10px 0;
+            color: rgba(0, 0, 0, 0.37);
+            font-weight: 700;
+            font-family: "Nunito", sans-serif;
+            font-size: 20px;
+        }
+
+        .form-control::placeholder {
+            color: rgba(0, 0, 0, 0.37);
+        }
+
+        .form-control.f-c-rounded {
+            border: 1px solid rgba(0, 0, 0, 0.26) !important;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-size: 12px;
+        }
+
+        .PhoneInput {
+            position: relative;
+
+            .PhoneInputCountry {
+                position: absolute;
+                left: auto;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+
+                .PhoneInputCountrySelectArrow {
+                    border-color: #222;
+                    opacity: 1;
+                    border-bottom-width: 2px;
+                    border-right-width: 2px;
+                    width: 7px;
+                    height: 7px;
+                    margin-left: 15px;
+                }
+            }
+
+            .PhoneInputInput {
+                border: 0;
+                padding-right: 70px;
+                border-radius: 0;
+                color: rgba(0, 0, 0, 0.37);
+                font-weight: 700;
+                font-family: "Nunito", sans-serif;
+                font-size: 20px;
+                outline: none;
+            }
+        }
+    }
+
+    .button-group {
+        text-align: right;
+    }
+}
+
+.step-form-container>*+* {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+}

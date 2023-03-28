@@ -73,3 +73,9 @@ $mt-white  : #FFFFFF;
         font-size: 15px;
     } 
 }
+
+@mixin fontStyle($font-weight,$font-size,$line-height,$font-color) {
+   font: $font-weight $font-size/$line-height 'Nunito', sans-serif;
+   color: $font-color;
+}
+

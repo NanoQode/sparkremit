@@ -1,0 +1,60 @@
+@import "../../variable.scss"; 
+.inner-banner{
+    background-image: url(../../images/Banner.png); 
+    padding:200px 0 120px 0;
+    h1{ 
+        @include fontStyle(800,70px,100px,$mt-black);
+        margin-bottom: 34px;
+    }
+    .search-field{
+        input{
+            border: 1px solid rgba(0, 0, 0, 0.58);
+            border-radius: 8px;
+            width: 100%;
+            height: 80px;
+            margin-bottom: 59px;
+            flex-wrap: nowrap;
+            padding: 10px 30px;
+            background-color: $mt-white;
+            position: relative;  
+            @include fontStyle(500,18px,22px,rgba(0, 0, 0, 0.51));
+            text-transform: capitalize; 
+        }
+    }
+}
+.help-page{
+    padding: 160px 0;
+    .related-articles{
+        ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style: none;
+            li {
+               a{
+                text-transform: capitalize;
+                padding: 17px 39px 18px;
+                height: 64px;
+                border: 1px solid $mt-black;
+                border-radius: 7px;
+                color: $mt-black;
+                @include text-fontM; 
+                transition: 0.3s ease-in-out;
+                width: auto;
+                display: inline-block;
+                &:hover{
+                    background-color: $mt-yellow;
+                    border-color: $mt-yellow; 
+                }
+                img{
+                    margin-left: 15px;
+                }
+               }
+            }
+        }
+    }
+}

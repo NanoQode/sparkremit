@@ -32,13 +32,164 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 
+/* custom css */
+.page-padding-top {
+  padding-top: 200px;
+}
 
-// 
+.sec-padding {
+  padding: 80px 0;
+}
 
- 
+.tag {
+  border: 1px solid #292930;
+  border-radius: 60px;
+  text-decoration: none;
+  color: #292930;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+a.tag:hover {
+  background-color: #292930;
+  color: #fff;
+}
+
+.tag-n-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  span {
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+
+.main-button {
+  min-height: 64px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  background-color: #fff;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #292930;
+  transition: 0.4s ease;
+  min-width: auto !important;
+  font-family: "Nunito", sans-serif;
+
+  i {
+    margin-left: 8px;
+    color: #5956E8;
+  }
+
+  &:hover {
+    background-color: #292930;
+    color: #fff;
+  }
+}
+
+.main-button.m-b-bordered {
+  border: 1px solid #292930;
+  background-color: transparent !important;
+  color: #292930;
+
+  &:hover,
+  &.active {
+    background-color: #292930 !important;
+    color: #fff;
+    border-color: #292930 !important;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.color-blue {
+  color: #5956E8;
+}
+
+.color-red {
+  color: #FF1850;
+}
+
+.color-yellow {
+  color: #FFDC60;
+}
+
+.color-green {
+  color: #38E55E;
+}
+
+.tag-not-clickable {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #292930;
+  font-family: "Nunito", sans-serif;
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.l-s-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-button.m-b-dark {
+  background-color: #292930;
+  color: #fff;
+  border: 1px solid #292930;
+
+  &:hover {
+    background-color: transparent;
+    color: #292930;
+  }
+}
+
+.button-group {
+  margin-top: 20px;
+
+  button+button {
+    margin-left: 15px;
+  }
+}
+
+button.main-button.m-b-grey {
+  background: rgba(41, 41, 48, 0.5);
+  border-color: #949497;
+}
+
+.main-button.m-b-blue {
+  background-color: #5956E8;
+  border-color: #5956E8;
+
+  &:hover {
+    color: #5956E8;
+  }
+}
+
+/* custom css */

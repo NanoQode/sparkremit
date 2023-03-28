@@ -1,0 +1,54 @@
+.step-2 {
+    text-align: right;
+}
+
+.way-to-send-money {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 20px;
+    text-align: left;
+
+    .w-s-m-hdr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+        svg {
+            fill: #5956E8;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.37);
+            font-size: 11px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .w-s-m-bdy {
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.5);
+
+        span {
+            min-width: 150px;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.37);
+        }
+
+        li+li {
+            margin-top: 10px;
+        }
+    }
+}

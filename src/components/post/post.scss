@@ -7,8 +7,20 @@
     margin-bottom: var(--bs-gutter-x);
     border: 1px solid #dcdcdc;
 
+    @media(max-width: 991px) {
+        padding: 15px;
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
     .post-image {
         margin-bottom: 2vw;
+
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
     }
 
     .post-text p {

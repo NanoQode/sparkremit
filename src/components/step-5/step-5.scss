@@ -1,9 +1,18 @@
+.step-5-wrap .s-f-left .link {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .transfer-status {
     border: 1px solid rgba(0, 0, 0, 0.26);
     border-radius: 5px;
     padding: 20px 30px;
     font-family: "Nunito", sans-serif;
     margin-top: 20px;
+
+    @media(max-width: 1199px) {
+        padding: 10px 20px;
+    }
 
     .t-s-hdr {
         border-bottom: 1px solid rgba(0, 0, 0, 0.26);
@@ -40,10 +49,19 @@
             min-width: 150px;
             display: inline-block;
             color: rgba(0, 0, 0, 0.37);
+
+            @media(max-width: 575px) {
+                width: 100%;
+            }
         }
 
-        li+li {
-            margin-top: 10px;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+
+            +li {
+                margin-top: 10px;
+            }
         }
     }
 }

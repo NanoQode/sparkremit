@@ -1,24 +1,17 @@
-.transfers-wrap {
+.personal-info {
     border: 1px solid rgba(0, 0, 0, 0.26);
     border-radius: 5px;
     padding: 20px 30px;
     font-family: "Nunito", sans-serif;
     margin-top: 20px;
-    text-align: center;
 
-    .transfers-hdr {
+    @media(max-width: 1199px) {
+        padding: 10px 20px;
+    }
+
+    .p-i-hdr {
         border-bottom: 1px solid rgba(0, 0, 0, 0.26);
-        position: relative;
-        padding-left: 30px;
         margin-bottom: 15px;
-        text-align: left;
-
-        svg {
-            fill: #42E052;
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
 
         h3 {
             font-size: 18px;
@@ -26,98 +19,35 @@
         }
     }
 
-    .transfers-bdy {
-        text-align: left;
-        max-height: 500px;
-        overflow: auto;
-    }
+    .p-i-bdy {
+        color: rgba(0, 0, 0, 0.37);
 
-    >.link {
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 600;
-        margin-top: 30px;
-        display: inline-block;
-    }
-}
-
-.transfer-container {
-    display: flex;
-    flex-wrap: wrap;
-    color: rgba(0, 0, 0, 0.51);
-    text-align: left;
-
-    ul li {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        +li {
-            margin-top: 15px;
-        }
-    }
-
-    .transfered-amount {
-        width: 40%;
-        font-size: 11px;
-        font-weight: 700;
-        text-align: right;
-
-        span {
-            display: block;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 14px;
+            margin-top: 20px;
         }
 
-        svg {
-            fill: #5956E8;
-        }
-    }
+        .p-i-label {
+            width: 40%;
+            font-weight: 500;
 
-    .transfered-to {
-        width: calc(60% - 30px);
-        position: relative;
-        padding-left: 30px;
-        padding-right: 30px;
-
-        svg {
-            position: absolute;
-            left: 0;
-            top: 0;
-            fill: #5956E8;
+            @media(max-width: 575px) {
+                width: 100%;
+            }
         }
 
-        h4 {
+        .p-i-text h4 {
             font-size: 14px;
             font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        p {
-            font-size: 12px;
-            font-weight: 500;
-            color: rgba(0, 0, 0, 0.37);
+            color: rgba(0, 0, 0, 0.5);
             margin-bottom: 0;
+
+            a {
+                margin-left: 5px;
+                color: rgba(0, 0, 0, 0.5);
+            }
         }
-
-        img {
-            position: absolute;
-            left: auto;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    h6 {
-        width: 30%;
-        padding-right: 30px;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    ul {
-        width: 70%;
-    }
-
-    +.transfer-container {
-        margin-top: 30px;
     }
 }

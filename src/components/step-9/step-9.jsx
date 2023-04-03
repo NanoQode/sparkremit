@@ -1,39 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import "./step-9.scss";
-import { MdEdit } from "react-icons/md";
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import { AiOutlineCreditCard } from "react-icons/ai";
+import { BsBank } from "react-icons/bs";
 
 const Step9 = function () {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
         <div className="step-9">
-            <div className="personal-info">
-                <div className="p-i-hdr">
-                    <h3>Personal Info.</h3>
+            <div className="linked-acc">
+                <div className="linked-acc-hdr">
+                    <h3>Linked Cards & Accounts</h3>
+                    <a href="javascript:void(0);" className="link" onClick={handleShow}>Add New account</a>
                 </div>
-                <div className="p-i-bdy">
-                    <ul className="l-s-none">
-                        <li>
-                            <div className="p-i-label">Full Name</div>
-                            <div className="p-i-text"><h4>Ali Arslan Zaidi</h4></div>
-                        </li>
-                        <li>
-                            <div className="p-i-label">Date of Birth</div>
-                            <div className="p-i-text"><h4>03 - 04 -1985</h4></div>
-                        </li>
-                        <li>
-                            <div className="p-i-label">Mobile Number</div>
-                            <div className="p-i-text"><h4>+92 313 2487213 <a href="javascript:void(0);"><MdEdit /></a></h4></div>
-                        </li>
-                        <li>
-                            <div className="p-i-label">Email Address</div>
-                            <div className="p-i-text"><h4>user@yourmail.com <a href="javascript:void(0);"><MdEdit /></a></h4></div>
-                        </li>
-                        <li>
-                            <div className="p-i-label">Residence address</div>
-                            <div className="p-i-text"><h4>45 Street. House No. 2 model town</h4></div>
-                        </li>
-                    </ul>
+                <div className="linked-acc-bdy">
+                    <Form>
+                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-1">
+                            <Form.Label>Linked cards</Form.Label>
+                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
+                        </Form.Group>
+                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-2">
+                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
+                        </Form.Group>
+                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-2">
+                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
+                        </Form.Group>
+                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-expiry-date">
+                            <Form.Label>Linked bank Accounts</Form.Label>
+                            <Form.Control className="f-c-rounded" type="text" placeholder="Bank Account -2354" />
+                        </Form.Group>
+                    </Form>
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    {/* <Modal.Title>Modal heading</Modal.Title> */}
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="choose-card-bank">
+                        <a href="javascript:void(0);"><AiOutlineCreditCard /> Card</a>
+                        <a href="javascript:void(0);"><BsBank /> Bank Account</a>
+                    </div>
+                </Modal.Body>
+                {/* <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer> */}
+            </Modal>
         </div>
     )
 }

@@ -25,9 +25,13 @@ import teamWork from "../../images/team-work.png";
 import { IoCallOutline } from 'react-icons/io5';
 import { IoMailOutline } from 'react-icons/io5';
 // import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
+// import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
-register();
+// register();
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const AboutUs = function () {
     return (
@@ -69,8 +73,23 @@ const AboutUs = function () {
             <div className="core-values sec-padding">
                 <HeadingWithIcon icon={check} subTitle="// 02 . OUR VALUES" title="The core values behind
 our work"></HeadingWithIcon>
-                <swiper-container class="swiper-core-values" navigation="true" slides-per-view="3.5" loop="false" space-between={30}>
-                    <swiper-slide>
+                <Swiper className="swiper-core-values"
+                    modules={[Navigation]}
+                    spaceBetween={30}
+                    slidesPerView={3.5}
+                    navigation
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1.25,
+                        },
+                        768: {
+                            slidesPerView: 2.5,
+                        },
+                        1200: {
+                            slidesPerView: 3.5,
+                        },
+                    }}>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={efficiency} alt="" />
@@ -80,8 +99,8 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={accountability} alt="" />
@@ -91,8 +110,8 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={commitment} alt="" />
@@ -102,8 +121,8 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={teamWork} alt="" />
@@ -113,8 +132,8 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={efficiency} alt="" />
@@ -124,8 +143,8 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                    <swiper-slide>
+                    </SwiperSlide>
+                    <SwiperSlide>
                         <div className="c-v-container">
                             <div className="c-v-icon">
                                 <img src={efficiency} alt="" />
@@ -135,15 +154,15 @@ our work"></HeadingWithIcon>
                                 <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit olme do semper dalaracc lacus vel facilisis volutpat est velitolm.</p>
                             </div>
                         </div>
-                    </swiper-slide>
-                </swiper-container>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className="careers sec-padding">
                 <HeadingWithIcon icon={handShake} subTitle="// 03 . OUR TEAM" title="Careers at Paysend"></HeadingWithIcon>
                 <div className="team-wrap">
                     <Container>
                         <Row>
-                            <Col md="4">
+                            <Col md={4} sm={6}>
                                 <div className="team-container">
                                     <div className="team-image">
                                         <img src={pippaClarkson} alt="" />
@@ -159,7 +178,7 @@ our work"></HeadingWithIcon>
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="4">
+                            <Col md={4} sm={6}>
                                 <div className="team-container">
                                     <div className="team-image">
                                         <img src={pippaClarkson} alt="" />
@@ -175,7 +194,7 @@ our work"></HeadingWithIcon>
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="4">
+                            <Col md={4} sm={6}>
                                 <div className="team-container">
                                     <div className="team-image">
                                         <img src={pippaClarkson} alt="" />

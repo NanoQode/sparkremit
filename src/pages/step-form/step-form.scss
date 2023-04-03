@@ -4,6 +4,14 @@
     border-radius: 23px;
     margin-top: 200px;
 
+    @media(max-width: 1199px) {
+        padding: 30px;
+    }
+
+    @media(max-width: 575px) {
+        padding: 20px 15px;
+    }
+
     .s-f-left {
         border-right: 1px solid rgba(0, 0, 0, 0.26);
         padding-right: 30px;
@@ -11,6 +19,15 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
+        @media(max-width: 767px) {
+            border-right: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+            padding-right: 0;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            height: auto;
+        }
 
         img {
             margin-bottom: 80px;
@@ -68,6 +85,10 @@
             font-weight: 700;
             font-family: "Nunito", sans-serif;
             font-size: 20px;
+
+            @media(max-width: 575px) {
+                font-size: 16px;
+            }
         }
 
         .form-control::placeholder {

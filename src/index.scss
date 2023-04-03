@@ -26,11 +26,16 @@ button {
     border: 1px solid #292930;
     padding: 17px 39px 18px;
     min-width: 182px;
-    height: 64px;
+    min-height: 64px;
     border-radius: 7px;
     transition: 0.3s ease-in-out;
     color: #FFFFFF;
     font: 500 18px/160% 'Nunito', sans-serif;
+
+    @media(max-width: 575px) {
+      padding: 10px 20px;
+      min-height: 50px;
+    }
 
     &.btn-primary {
       background: #292930;

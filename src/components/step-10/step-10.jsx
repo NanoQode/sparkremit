@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import "./step-10.scss";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineCreditCard } from "react-icons/ai";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BsBank } from "react-icons/bs";
+import { BsGift } from "react-icons/bs";
+import { TbUsers } from "react-icons/tb";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { MdSpeed } from "react-icons/md";
+import { IoSettingsOutline } from "react-icons/io5";
+import { SlSupport } from "react-icons/sl";
+import { TiDocumentText } from "react-icons/ti";
 
 const Step10 = function () {
     const [show, setShow] = useState(false);
@@ -13,28 +19,22 @@ const Step10 = function () {
     const handleShow = () => setShow(true);
     return (
         <div className="step-10">
-            <div className="linked-acc">
-                <div className="linked-acc-hdr">
-                    <h3>Linked Cards & Accounts</h3>
-                    <a href="javascript:void(0);" className="link" onClick={handleShow}>Add New account</a>
+            <div className="step-profile">
+                <div className="step-profile-hdr">
+                    <h3>Profile</h3>
                 </div>
-                <div className="linked-acc-bdy">
-                    <Form>
-                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-1">
-                            <Form.Label>Linked cards</Form.Label>
-                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
-                        </Form.Group>
-                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-2">
-                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
-                        </Form.Group>
-                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-2">
-                            <Form.Control className="f-c-rounded" type="text" placeholder="Card -4321" />
-                        </Form.Group>
-                        <Form.Group className="mb-3 f-group" controlId="lAcc-card-expiry-date">
-                            <Form.Label>Linked bank Accounts</Form.Label>
-                            <Form.Control className="f-c-rounded" type="text" placeholder="Bank Account -2354" />
-                        </Form.Group>
-                    </Form>
+                <div className="step-profile-bdy">
+                    <ul className="l-s-none">
+                        <li className="bordered"><a href="javascript:void(0);"><BsGift />Paysend Bonus<span>0.00 CAD</span></a></li>
+                        <li className="bordered"><a href="javascript:void(0);"><TbUsers />Invite Friends</a></li>
+                        <li><a href="javascript:void(0);"><HiOutlineUserCircle />Personal Info</a></li>
+                        <li><a href="javascript:void(0);"><AiOutlineCreditCard />Linked cards & accounts</a></li>
+                        <li><a href="javascript:void(0);"><MdSpeed />Limits</a></li>
+                        <li className="bordered"><a href="javascript:void(0);"><IoSettingsOutline />Settings</a></li>
+                        <li><a href="javascript:void(0);"><SlSupport />Support</a></li>
+                        <li><a href="javascript:void(0);"><AiOutlineQuestionCircle />Help Centre</a></li>
+                        <li><a href="javascript:void(0);"><TiDocumentText />Legal</a></li>
+                    </ul>
                 </div>
             </div>
             <Modal show={show} onHide={handleClose}>

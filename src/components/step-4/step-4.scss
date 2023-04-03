@@ -6,6 +6,10 @@
     text-align: left;
     margin-top: 20px;
 
+    @media(max-width: 1199px) {
+        padding: 10px 20px;
+    }
+
     .add-bank-hdr {
         border-bottom: 1px solid rgba(0, 0, 0, 0.26);
         position: relative;

@@ -9,11 +9,11 @@ import Step2 from "../../components/step-2/step-2";
 import Step3 from "../../components/step-3/step-3";
 import Step4 from "../../components/step-4/step-4";
 import Step5 from "../../components/step-5/step-5";
+import Step6 from "../../components/step-6/step-6";
 import Step7 from "../../components/step-7/step-7";
 import Step8 from "../../components/step-8/step-8";
 import Step9 from "../../components/step-9/step-9";
 import Step10 from "../../components/step-10/step-10";
-import Step11 from "../../components/step-11/step-11";
 import StepsText from "../../components/steps-text/steps-text";
 import eWallet from "../../images/e-wallet.svg";
 import mailBox from "../../images/mailbox.svg";
@@ -38,7 +38,7 @@ const StepForm = function () {
         <div className="step-form-wrap sec-padding">
             <Container>
                 <div className="step-form-container">
-                    <div className="step-1-wrap">
+                    <div className="step-wrap step-1-wrap active">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -53,7 +53,7 @@ const StepForm = function () {
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-2-wrap">
+                    <div className="step-wrap step-2-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -68,7 +68,7 @@ money in Pakistan" description="Lorem Ipsum is simply dummy text of the printing
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-3-wrap">
+                    <div className="step-wrap step-3-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -83,7 +83,7 @@ issued in Canada" description="Lorem Ipsum is simply dummy text of the printing 
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-4-wrap">
+                    <div className="step-wrap step-4-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -98,7 +98,7 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-5-wrap">
+                    <div className="step-wrap step-5-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -121,11 +121,25 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-7-wrap">
+                    <div className="step-wrap step-6-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
                                     <StepsText image={sendGift} heading="How to deliver money to recipeint" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
+                                </div>
+                            </Col>
+                            <Col md={7}>
+                                <div className="s-f-right">
+                                    <Step6 />
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className="step-wrap step-7-wrap">
+                        <Row>
+                            <Col md={5}>
+                                <div className="s-f-left">
+                                    <StepsText image={messenger} heading="My Payees" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
                                 </div>
                             </Col>
                             <Col md={7}>
@@ -135,11 +149,11 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-8-wrap">
+                    <div className="step-wrap step-8-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
-                                    <StepsText image={messenger} heading="My Payees" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
+                                    <StepsText image={idCard} heading="Personal Information" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
                                 </div>
                             </Col>
                             <Col md={7}>
@@ -149,11 +163,11 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-9-wrap">
+                    <div className="step-wrap step-9-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
-                                    <StepsText image={idCard} heading="Personal Information" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
+                                    <StepsText image={profileData} heading="Linked Accounts" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
                                 </div>
                             </Col>
                             <Col md={7}>
@@ -163,21 +177,7 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                         </Row>
                     </div>
-                    <div className="step-10-wrap">
-                        <Row>
-                            <Col md={5}>
-                                <div className="s-f-left">
-                                    <StepsText image={profileData} heading="Linked Accounts" description="Lorem Ipsum is simply dummy text of the printing and industryu Ipsum has been the industry's " />
-                                </div>
-                            </Col>
-                            <Col md={7}>
-                                <div className="s-f-right">
-                                    <Step10 />
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-                    <div className="step-11-wrap">
+                    <div className="step-wrap step-10-wrap">
                         <Row>
                             <Col md={5}>
                                 <div className="s-f-left">
@@ -186,7 +186,7 @@ Card" description="Lorem Ipsum is simply dummy text of the printing and industry
                             </Col>
                             <Col md={7}>
                                 <div className="s-f-right">
-                                    <Step11 />
+                                    <Step10 />
                                 </div>
                             </Col>
                         </Row>

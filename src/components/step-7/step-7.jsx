@@ -1,38 +1,114 @@
-import React, { useState } from "react";
+import React from "react";
 import "./step-7.scss";
-import { AiOutlineCreditCard } from "react-icons/ai";
-import { BsGlobe } from "react-icons/bs";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import ReactFlagsSelect from "react-flags-select";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+import { BsBank } from "react-icons/bs";
+import { TfiHome } from "react-icons/tfi";
+import { TfiAngleDown } from "react-icons/tfi";
+import flagPak from "../../images/flag-pak.svg";
 
 const Step7 = function () {
-    const [selected, setSelected] = useState("");
     return (
         <div className="step-7">
-            <div className="money-deliver-options">
-                <div className="m-d-option">
-                    <AiOutlineCreditCard />
-                    <h3>To bank card</h3>
-                    <p>Faster transfer directly to receiver’s master card or other bank details</p>
+            <div className="transfers-wrap">
+                <div className="transfers-hdr">
+                    <BsFillCheckCircleFill />
+                    <h3>My Transfers</h3>
                 </div>
-                <div className="m-d-option">
-                    <BsGlobe />
-                    <h3>Swift Wire Transfer</h3>
-                    <p>Transfer to recipient's bank account or other account info.</p>
+                <div className="transfers-bdy">
+                    <div className="transfer-container">
+                        <h6>March</h6>
+                        <ul className="l-s-none">
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Romeen Khan</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-30,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Ali Zaidi</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-65,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Jameel Khan</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-39,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="transfer-container">
+                        <h6>February</h6>
+                        <ul className="l-s-none">
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>John Doe</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-39.50 USD</span><BsFillCheckCircleFill /></div>
+                            </li>
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Chris Myler</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-39.50 USD</span><BsFillCheckCircleFill /></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="transfer-container">
+                        <h6>January</h6>
+                        <ul className="l-s-none">
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Ali Zaidi</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-65,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="transfer-container">
+                        <h6>December</h6>
+                        <ul className="l-s-none">
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Ali Zaidi</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-65,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                            <li>
+                                <div className="transfered-to">
+                                    <BsBank />
+                                    <h4>Ali Zaidi</h4>
+                                    <p>To Account -1921</p>
+                                    <img src={flagPak} alt="" />
+                                </div>
+                                <div className="transfered-amount"><span>-65,000 PKR</span><BsFillCheckCircleFill /></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <Form>
-                    <Form.Label>More options by destinations</Form.Label>
-                    <ReactFlagsSelect
-                        selected={selected}
-                        onSelect={(code) => setSelected(code)}
-                        placeholder="Search other countries"
-                    />
-                </Form>
-            </div>
-            <div className="button-group">
-                <Button type="button" className="main-button m-b-dark m-b-grey">Back</Button>
-                <Button type="button" className="main-button m-b-dark">Next Step</Button>
+                <a href="javascript:void(0);" className="link">Show More <TfiAngleDown /></a>
             </div>
         </div>
     )

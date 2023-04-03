@@ -11,6 +11,16 @@
         justify-content: center;
         background-color: #FFDC60;
         border-radius: 100px;
+
+        @media(max-width: 1199px) {
+            width: 68px;
+            height: 68px;
+        }
+
+        @media(max-width: 991px) {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     .h-w-i-text {
@@ -18,17 +28,50 @@
         font-family: 'Noto Sans', sans-serif;
         width: calc(100% - 88px);
 
+        @media(max-width: 1199px) {
+            padding-left: 30px;
+            width: calc(100% - 68px);
+        }
+
+        @media(max-width: 991px) {
+            padding-left: 20px;
+            width: calc(100% - 48px);
+        }
+
         h6 {
             font-size: 15px;
             text-transform: uppercase;
             letter-spacing: 4px;
             font-family: 'Noto Sans', sans-serif;
+
+            @media(max-width: 575px) {
+                font-size: 12px;
+            }
         }
 
         h2 {
             font-size: 40px;
             font-weight: 600;
             font-family: "Nunito", sans-serif;
+
+            @media(max-width: 1199px) {
+                font-size: 32px;
+            }
+
+            @media(max-width: 991px) {
+                font-size: 30px;
+            }
+
+            @media(max-width: 575px) {
+                font-size: 24px;
+            }
         }
+    }
+}
+
+// media queries
+@media(max-width: 991px) {
+    .h-w-i-icon img {
+        max-width: 20px;
     }
 }

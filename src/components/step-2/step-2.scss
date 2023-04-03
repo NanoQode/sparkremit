@@ -10,6 +10,10 @@
     margin-top: 20px;
     text-align: left;
 
+    @media(max-width: 1199px) {
+        padding: 10px 20px;
+    }
+
     .w-s-m-hdr {
         border-bottom: 1px solid rgba(0, 0, 0, 0.26);
         position: relative;
@@ -45,6 +49,10 @@
             min-width: 150px;
             display: inline-block;
             color: rgba(0, 0, 0, 0.37);
+
+            @media(max-width: 575px) {
+                width: 100%;
+            }
         }
 
         li+li {

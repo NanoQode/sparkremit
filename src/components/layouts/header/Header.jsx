@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from '@mui/material/Button';
 import { logo } from "../../../images";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -13,10 +14,8 @@ const Header = () => {
   return (
     <> 
       <Navbar   expand="lg">
-      <Container>
-        <Navbar.Brand href="#">
-          <img src={logo}/>
-        </Navbar.Brand>
+      <Container> 
+        <Link to="/" className="navbar-brand"><img src={logo}/></Link> 
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -24,9 +23,9 @@ const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Personal</Nav.Link>
-            <Nav.Link href="#action2">Buisness</Nav.Link> 
-            <Nav.Link href="#action2">Company</Nav.Link>  
+            <Link to="/about-us" className="nav-link">About</Link>
+            <Link to="/blogs" className="nav-link">Blog</Link>
+            <Link to="/contact" className="nav-link">Contact</Link> 
           </Nav> 
         </Navbar.Collapse>
         <div className="header-btn">

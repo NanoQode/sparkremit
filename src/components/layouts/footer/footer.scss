@@ -11,7 +11,10 @@ footer {
     @include media-query(md) {
         padding: 100px 0 50px 0;
     }
-
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
     .container {
         display: flex;
         align-items: flex-start;

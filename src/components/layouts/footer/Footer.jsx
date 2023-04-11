@@ -52,27 +52,30 @@ const Footer = () => {
                   <li>
                     <Link to="/blogs">Blog</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <a>Pricing Single</a>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <a>Services</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="mt-links-wrap">
                 <h3><img src={footer7} alt=""></img> Uitility Pages</h3>
                 <ul>
+                  {/* <li>
+                    <Link to="/culture">Culture</Link>
+                  </li> */}
                   <li>
-                    <a>Styleguide</a>
+                    <Link to="/enterprice">Enterprice</Link>
                   </li>
                   <li>
-                    <a>404 Not Found</a>
-                  </li>
-                  <li>
+                    <Link to="/help">Help</Link>
+                  </li> 
+                  {/* <li>
                     <a>Password Protected</a>
                   </li>
                   <li>
@@ -80,7 +83,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a>Changelog</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="mt-links-wrap">
